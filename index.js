@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000; // You can change the port as needed
+const port = process.env.PORT || 3000
 
 app.get('/api', (req, res) => {
     // Extract query parameters
